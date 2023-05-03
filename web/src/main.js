@@ -1,0 +1,22 @@
+import { createApp } from 'vue';
+import './style.css';
+import App from './App.vue';
+import SearchResults from './components/SearchResults.vue';
+import Searchbar from './components/Searchbar.vue';
+import ExpandedPlaylist from './components/ExpandedPlaylist.vue';
+import Player from './components/Player.vue';
+import Session from './components/Session.vue';
+import AnswerFeedback from './components/AnswerFeedback.vue';
+import TitleScreen from './components/TitleScreen.vue';
+import ThemeToggle from './components/ThemeToggle.vue';
+
+const app = createApp(App);
+app.component('SearchResults', SearchResults);
+app.component('Searchbar', Searchbar);
+app.component('ExpandedPlaylist', ExpandedPlaylist);
+app.component('Player', Player);
+app.component('Session', Session);
+app.component('AnswerFeedback', AnswerFeedback);
+app.component('TitleScreen', TitleScreen);
+app.component('ThemeToggle', ThemeToggle);
+const mountedApp = app.mount('#app');
